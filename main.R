@@ -29,3 +29,21 @@ shinylive::export(
 )
 
 httpuv::runStaticServer(dir = "docs/sampling_en/", port = 8881)
+
+# 2. 기술통계 -----------------------------------------------------------
+
+shinylive::export(
+  appdir = "apps/descriptive",
+  destdir = "docs/descriptive"
+)
+
+httpuv::runStaticServer(dir = "docs/descriptive", port = 8881)
+
+# 2.1. 기술통계 (영어) --------------------------------------------------
+
+shinylive::export(
+  appdir = "apps/descriptive_en",
+  destdir = "docs/descriptive_en"
+)
+
+httpuv::runStaticServer(dir = "docs/descriptive_en", port = 8881)
